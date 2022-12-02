@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timsolont3(arr) {
+        for (let i = 0; i < arr.length - 1; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    let x = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = x;
+                }
+            }
+        }
+        for (let k = 0; k < arr.length; k++) {
+
+        }
+
+        document.write('Điểm cao thứ 3 là: ' + arr[arr.length - 3]);
+    }
+
+    let arr1 = [10, 1, 4, 6, 20, 43];
+    timsolont3(arr1);
+</script>
+</body>
+</html>
